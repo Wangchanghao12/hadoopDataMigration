@@ -1,0 +1,14 @@
+1. function log_info :原hadoop集群文件大小和目标集群大小一致时输出，大小不为空时输出文件夹名，为空时说明源集群没有该日期名的文件夹,输出路径：/var/log/distcp-success-log
+
+2. function log_error :迁移有问题，文件夹大小不一致。输出路径：/var/log/distcp-error-log
+
+3. first #开始文件夹的日期如2018-12-05 `date -d"2018-12-05" +"%Y-%m-%d"`
+4. Last #需要同步的最晚文件夹日期名
+
+5. localIp #原数据存放的hadoop的ip地址
+6. remoteIp #目标hadoop的ip地址
+
+7. folderPath # "/"下到文件夹的路径
+
+
+
